@@ -4,8 +4,7 @@ services:
         build:
             context: .
         volumes:
-            - "./src/:${HOME}"
-            - /etc/passwd:/etc/passwd:ro
-            - /etc/group:/etc/group:ro
-        working_dir: ${HOME}
+            - "./src/:/home/node/work"
+#        user: 1000:1000
+#        working_dir: /home/node/work
         tty: true
