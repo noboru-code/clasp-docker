@@ -4,7 +4,7 @@ services:
         build:
             context: .
         volumes:
-            - "./src/:/home/node/work"
+            - "./:/home/node/work"
 #        user: 1000:1000
 #        working_dir: /home/node/work
         tty: true
